@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Barra superior -->
+  <div class="chat-header">
+    <button id="backToProducts" class="back-btn">🛍️ Volver al portal</button>
+  </div>
+
+  <!-- Contenedor principal del chat -->
+  <div class="chat-container">
+    <h1>💬 Chat en tiempo real</h1>
+
+    <!-- RECUADRO DE MENSAJES -->
+    <div id="messages" class="messages"></div>
+
+    <!-- Formulario -->
+    <form id="chatForm" class="chat-form">
+      <input id="msgInput" type="text" placeholder="Escribe un mensaje..." required />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/chat.js"></script>
+</body>
+</html>
+
+
